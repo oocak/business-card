@@ -25,27 +25,21 @@ class MyApp extends StatelessWidget {
                                                              fontFamily:'LibreBaskerville'
                                                               ),
                    ),
-              Container(
-                margin: EdgeInsets.all(16.0),
-                padding: EdgeInsets.all(10.0),
+              Card(
+                margin: EdgeInsets.symmetric(vertical: 10.0,horizontal: 16.0),
                 color:Colors.white,
-                child:Row(
-                 children:<Widget>[
-                   Icon(Icons.book,color:Colors.teal.shade900),
-                   Text('Book: Stranger',style:TextStyle(color:Colors.teal,fontWeight: FontWeight.bold)),
-                 ]
+                child:ListTile(
+                 leading:Icon(Icons.book,color:Colors.teal.shade900),
+                 title:Text('Book: Stranger',style:TextStyle(color:Colors.teal,fontWeight: FontWeight.bold)),
                 ),
               ),
-              Container(
+              Card(
                 color:Colors.white,
-                margin:EdgeInsets.all(16.0),
-                padding:EdgeInsets.all(10.0),
-                child: Row(
-                  children:<Widget>[
+                margin: EdgeInsets.symmetric(vertical: 10.0,horizontal: 16.0),
+                child: ListTile(
                    // Icon(Icons.bookmark,color:Colors.teal.shade900),
-                    Text('Autumn is a second spring when every leaf is a flower',
-                         style:TextStyle(color:Colors.teal,fontWeight:FontWeight.w500))
-                  ]
+                    leading:Text('Autumn is a second spring when every leaf is a flower',
+                            style:TextStyle(color:Colors.teal,fontWeight:FontWeight.w700))                 
                 ),
               )
             ],
